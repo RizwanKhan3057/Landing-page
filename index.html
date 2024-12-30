@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RizzCars - Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <h2>RizzMotors</h2>
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section home">
+        <div class="home-content">
+            <h1>Welcome to RizzMotors</h1>
+            <p>Explore our world-class cars designed to give you the ultimate driving experience.</p>
+        </div>
+
+        <!-- Image Slider Section -->
+        <div class="slider-container">
+            <div class="slider" id="carSlider">
+                <img src="./assets/nero-1.png" alt="Car 1" class="slide">
+                <img src="./assets/sedan.png" alt="Car 2" class="slide">
+                <img src="./assets/SUV.png" alt="Car 3" class="slide">
+            </div>
+            <div class="buttons">
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="about-content">
+            <div class="about-left">
+                <img src="./assets/nero-b.png" alt="Car 4" class="about-image">
+            </div>
+            <div class="about-right">
+                <h2>About RizzMotors</h2>
+                <p>RizzMotors is a global automobile manufacturer with a strong presence in the automotive industry. From sedans to SUVs, RizzMotors is dedicated to providing innovative, sustainable, and quality vehicles.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="contact-content">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or would like more information about our cars, feel free to get in touch with us.</p>
+            <button onclick="showContactInfo()">Get in Touch</button>
+            <div id="contact-info" style="display:none;">
+                <p>Email: info@tatamotors.com</p>
+                <p>Phone: +91 123 456 7890</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <footer> <p>Copyright &#169;2024 RizzMotors. Rights Reserved   </p></footer>
+</body>
+</html>
